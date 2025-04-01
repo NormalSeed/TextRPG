@@ -10,7 +10,7 @@ namespace TextRPG.Scenes
     {
         public override void Render()
         {
-            Console.WriteLine("*    어둠의  서막   *");
+            Console.WriteLine("***  어둠의 서막  ***");
             Console.WriteLine("밤하늘은 잔뜩 찌푸린 구름으로 덮여 있었고, 달빛조차도 두꺼운 장막을 뚫고 내려오지 못했다.");
             Console.WriteLine("오래된 전설에 따르면, 이 세상에는 네 개의 마법의 봉인이 존재하며, 그 봉인은 인간과 신들의 세계를 나누는 역할을 한다고 한다.");
             Console.WriteLine("그러나 최근, 작은 마을 곳곳에서 봉인이 약해졌다는 소문이 돌기 시작했다.");
