@@ -23,6 +23,8 @@ namespace TextRPG
         {
             sceneDic = new Dictionary<string, Scene>();
             sceneDic.Add("Title", new TitleScene());
+            sceneDic.Add("Intro", new IntroScene());
+            // TODO : TownScene 작성
             curScene = sceneDic["Title"];
 
             // 플레이어 초기 스탯
@@ -47,6 +49,11 @@ namespace TextRPG
                 curScene.Wait();
                 curScene.Next();
             }
+        }
+
+        public static void ChangeScene(string sceneName)
+        {
+            curScene = sceneDic[sceneName];
         }
 
         public static void End()

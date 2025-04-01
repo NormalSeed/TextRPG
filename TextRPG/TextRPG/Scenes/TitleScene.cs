@@ -38,7 +38,7 @@ namespace TextRPG.Scenes
             switch (input)
             {
                 case ConsoleKey.D1:
-                    Console.WriteLine();
+                    Game.ChangeScene("Intro");
                     break;
             }
         }
