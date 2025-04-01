@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TextRPG.Scene
+namespace TextRPG.Scenes
 {
     public abstract class Scene
     {
@@ -22,7 +22,7 @@ namespace TextRPG.Scene
         // <summary>
         // 선택지 입력
         // </summary>
-        public void Input(ConsoleKey input)
+        public void Input()
         {
             input = Console.ReadKey(true).Key;
         }
