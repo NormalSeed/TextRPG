@@ -9,18 +9,29 @@ namespace TextRPG
 {
     public static class Game
     {
-        // 게임에 필요한 정보
+        // 게임에 필요한 정보들
         private static bool gameOver;
+
         private static Dictionary<string, Scene> sceneDic;
         private static Scene curScene;
 
-        // 게임에 필요한 기능
-        // 시작, 실행, 끝
+        private static Player player;
+        public static Player Player { get { return player; } }
+
+        // 게임에 필요한 기능 : 시작, 실행, 끝
         public static void Start()
         {
             sceneDic = new Dictionary<string, Scene>();
             sceneDic.Add("Title", new TitleScene());
             curScene = sceneDic["Title"];
+
+            // 플레이어 초기 스탯
+            player = new Player();
+            player.Job = "모험가";
+            player.Power = 10;
+            player.Speed = 5;
+            player.Charm = 5;
+            player.Hustle = 1;
         }
 
         public static void Run()
